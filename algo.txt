@@ -1,0 +1,17 @@
+-- Configs
+## create a new repository
+## create structure
+## get dataset
+## create Enums
+## create Config variables
+
+
+-- Classifier
+## create a connector base class
+    ### Iconnector base class - for given name annotation
+## from the connector base class for given dataset mode, read the dataset into pandas dataframe
+    ### ### read(abstract class) must be perfomed as a contract from base class
+    ### this method is used for processing
+## from the pandas DataFrame process RDF model using necesary model_configurations
+    ###
+## sink the model as .md/ file by sink_configurations

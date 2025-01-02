@@ -1,0 +1,27 @@
+## naming conventions :
+-- directories (nested) - lowercase
+-- functions / modules - lowecases
+-- Classes - CamelCases
+-- variables - CAPS / UPPERCASES
+
+## commit standards :
+-- conventional commits :
+--- Commits MUST be prefixed with a type, which consists of a noun, feat, fix, etc., followed by the OPTIONAL scope, OPTIONAL !, and REQUIRED terminal colon and space.
+--- The type feat MUST be used when a commit adds a new feature to your application or library.
+--- The type fix MUST be used when a commit represents a bug fix for your application.
+--- A commit body is free-form and MAY consist of any number of newline separated paragraphs.
+--- BREAKING-CHANGE MUST be synonymous with BREAKING CHANGE, when used as a token in a footer.
+
+/// feat - introducing new feature
+/// init - initialize a new document / directory
+/// fix - fixing a bug change
+/// fix! - to breaking a change
+
+## validators - pydantic
+
+## testing - uniitest for functional testing
+
+## version control - use git / github
+
+
+
