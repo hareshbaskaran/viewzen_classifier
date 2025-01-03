@@ -1,4 +1,6 @@
-project/
+## VIEWZEN CLASSIFIER
+
+viewzen_classifier/
 │
 ├── app/
 │   ├── __init__.py
@@ -10,3 +12,5 @@ project/
 ├── streamlit_app/
 │   └── iris_predictor.py  # Streamlit app
 ├── requirements.txt
+
+
