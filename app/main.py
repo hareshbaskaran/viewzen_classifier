@@ -1,7 +1,7 @@
-from fastapi import FastAPI, Form
-import numpy as np
+from fastapi import FastAPI
 from app.models.iris import IrisInput, IrisPrediction
 from app.processors.model_processor import ModelProcessor
+from app.utils.helpers import convert_model_to_numpy
 
 
 app = FastAPI()
@@ -15,18 +15,15 @@ async def read_root():
 
 
 @app.post("/predict", response_model=IrisPrediction)
-async def predict(
-    sepal_length: float = Form(...),
-    sepal_width: float = Form(...),
-    petal_length: float = Form(...),
-    petal_width: float = Form(...),
-):
-    # Convert the input data to a numpy array
-    input_data = np.array([[sepal_length, sepal_width, petal_length, petal_width]])
+async def predict(data: IrisInput):
+    # Convert the Pydantic model instance to numpy array
+    input_data = convert_model_to_numpy(data)
 
+    # Make a prediction using the model processor (example model processor)
     predicted_class = model_processor.predict(input_data)
     predicted_class_name = model_processor.get_class_name(predicted_class)
 
+    # Return the prediction result in JSON format
     return IrisPrediction(
         predicted_class=predicted_class, predicted_class_name=predicted_class_name
     )
