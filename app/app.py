@@ -31,7 +31,7 @@ if st.button("Predict"):
 
     response = requests.post(API_ENDPOINT_URL, data=data)
 
-    ## check respinse code
+    ## check response code
 
     if response.status_code == 200:
         prediction = response.json()
@@ -41,4 +41,4 @@ if st.button("Predict"):
         st.write("Error in prediction. Please try again.")
 
 # uvicorn app.main:app --reload
-# streamlit run web.py
+# streamlit run app/app.py

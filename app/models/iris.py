@@ -10,11 +10,13 @@ class IrisInput(BaseModel):
 
     # Root validator to convert the input data to a numpy array
 
+
 class IrisPrediction(BaseModel):
     predicted_class: int = Field(..., description="Predicted class of the iris flower")
     predicted_class_name: str = Field(
         ..., description="Predicted class name (e.g., Setosa, Versicolor, Virginica)"
     )
+
 
 """
     @root_validator(pre=True)
