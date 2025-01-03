@@ -1,4 +1,4 @@
-from fastapi import FastAPI, Form
+from fastapi import FastAPI
 import numpy as np
 from app.models.iris import IrisInput, IrisPrediction
 from app.processors.model_processor import ModelProcessor
@@ -16,14 +16,9 @@ async def read_root():
 
 
 @app.post("/predict", response_model=IrisPrediction)
-async def predict(
-    sepal_length: float = Form(...),
-    sepal_width: float = Form(...),
-    petal_length: float = Form(...),
-    petal_width: float = Form(...),
-):
+async def predict(data: IrisInput):
     # Convert the input data to a numpy array
-    input_data = np.array([[sepal_length, sepal_width, petal_length, petal_width]])
+    input_data = np.array([[data.sepal_length, data.sepal_width, data.petal_length, data.petal_width]])
 
     # Make a prediction using the model processor
     predicted_class = model_processor.predict(input_data)
