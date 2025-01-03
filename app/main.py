@@ -1,7 +1,7 @@
 from fastapi import FastAPI, Form
 import numpy as np
-from models.iris import IrisInput, IrisPrediction
-from processors.model_processor import ModelProcessor
+from app.models.iris import IrisInput, IrisPrediction
+from app.processors.model_processor import ModelProcessor
 
 
 app = FastAPI()

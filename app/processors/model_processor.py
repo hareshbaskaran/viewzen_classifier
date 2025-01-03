@@ -36,7 +36,6 @@ class ModelProcessor:
         return self.model
 
     def predict(self, data: np.ndarray) -> int:
-        # Load pre-trained model
         model = self.load_model()
 
         # Convert text to numpy array
