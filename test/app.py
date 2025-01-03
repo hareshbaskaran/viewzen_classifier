@@ -11,6 +11,7 @@ app = FastAPI()
 def root():
     return {"message": "hello world"}
 
+
 @app.post("/predict", response_model=PredictionData)
 def predict(data: PredictionInput):
     try:
@@ -18,16 +19,20 @@ def predict(data: PredictionInput):
         input_data = data.to_numpy()
 
         # Initialize the IrisModelHandler with required arguments
-        model_obj = IrisModelHandler(model_path=MODEL_PATH, target_names=TARGET_NAMES)
+        model_obj = IrisModelHandler(model_path=MODEL_PATH)
 
         # Load the pre-trained model
         model_obj.load_model()
 
         # Perform the prediction
-        prediction = model_obj.predict(input_data)
+        prediction_label, prediction_name = model_obj.predict(input_data)
 
         # Return the prediction as per the PredictionData schema
-        return prediction
+        return PredictionData(
+            prediction_label=prediction_label,
+            prediction_name=prediction_name
+        )
+
 
     except Exception as e:
         # Log the exception and raise an HTTPException with a proper error message

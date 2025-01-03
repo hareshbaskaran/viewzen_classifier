@@ -2,7 +2,7 @@
 
 ## classifier - configs
 DATASET_CONNECTOR_MODE = "csv"
-DATASET_PATH = "C:/Users/baska/viewzen_classifier/data/Iris.csv"
+DATASET_PATH = "/test/data/Iris.csv"
 
 TARGET_NAMES = ["Setosa", "Versicolor", "Virginica"]
-MODEL_PATH = "C:/Users/baska/viewzen_classifier/data/iris_classifier.pkl"
+MODEL_PATH = "/test/data/iris_classifier.pkl"

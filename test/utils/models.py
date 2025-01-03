@@ -17,4 +17,3 @@ class PredictionInput(BaseModel):
         return np.array([list(self.model_dump().values())])
 
 
-
