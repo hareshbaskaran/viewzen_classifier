@@ -3,13 +3,12 @@ import numpy as np
 from sklearn.datasets import load_iris
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
+from app.utils.configs import MODEL_PATH
 
-
-## todo : add "iris_model.pkl" into Configs
 class ModelProcessor:
     def __init__(self):
         self.model = None
-        self.model_path = "data/iris_model.pkl"
+        self.model_path = MODEL_PATH
 
     def train_and_save_model(self):
         iris_data = load_iris()
