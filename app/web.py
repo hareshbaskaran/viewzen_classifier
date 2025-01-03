@@ -1,6 +1,6 @@
 import streamlit as st
 import requests
-from app.utils.configs import API_ENDPOINT_URL
+from utils.configs import API_ENDPOINT_URL
 
 
 st.title("Iris Flower Prediction")

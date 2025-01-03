@@ -1,10 +1,9 @@
 from fastapi import FastAPI, Form
-from pydantic import BaseModel
 import numpy as np
 from models.iris import IrisInput, IrisPrediction
 from processors.model_processor import ModelProcessor
 
-# Initialize FastAPI app
+
 app = FastAPI()
 
 # Initialize the model processor
@@ -13,7 +12,7 @@ model_processor = ModelProcessor()
 
 @app.get("/", response_model=str)
 async def read_root():
-    return "Welcome to the Iris Prediction API!"
+    return "Welcome :)"
 
 
 @app.post("/predict", response_model=IrisPrediction)
