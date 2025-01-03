@@ -1,8 +1,6 @@
 import streamlit as st
 import requests
-
-
-FASTAPI_URL = "http://127.0.0.1:8000/predict"
+from app.utils.configs import API_ENDPOINT_URL
 
 
 st.title("Iris Flower Prediction")
@@ -31,7 +29,7 @@ if st.button("Predict"):
         "petal_width": petal_width,
     }
 
-    response = requests.post(FASTAPI_URL, data=data)
+    response = requests.post(API_ENDPOINT_URL, data=data)
 
     ## check respinse code
 
