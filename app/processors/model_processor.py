@@ -5,10 +5,11 @@ from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 
 
+## todo : add "iris_model.pkl" into Configs
 class ModelProcessor:
     def __init__(self):
         self.model = None
-        self.model_path = "iris_model.pkl"
+        self.model_path = "data/iris_model.pkl"
 
     def train_and_save_model(self):
         iris_data = load_iris()
@@ -18,8 +19,6 @@ class ModelProcessor:
 
         model = RandomForestClassifier(n_estimators=100)
         model.fit(X_train, y_train)
-
-        # Save the trained model to a file
         joblib.dump(model, self.model_path)
 
     def load_model(self):

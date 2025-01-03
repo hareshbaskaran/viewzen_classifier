@@ -1,13 +1,12 @@
-# viewzen_classifier 
-
-
+project/
+│
 ├── app/
 │   ├── __init__.py
 │   ├── models/
 │   │   └── iris.py
 │   ├── processors/
 │   │   └── model_processor.py
-│   ├── main.py
-└── templates/
-    ├── index.html
-    └── result.html
+│   ├── main.py  # FastAPI app
+├── streamlit_app/
+│   └── iris_predictor.py  # Streamlit app
+├── requirements.txt

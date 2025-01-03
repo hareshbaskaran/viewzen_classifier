@@ -10,9 +10,11 @@ app = FastAPI()
 # Initialize the model processor
 model_processor = ModelProcessor()
 
+
 @app.get("/", response_model=str)
 async def read_root():
     return "Welcome to the Iris Prediction API!"
+
 
 @app.post("/predict", response_model=IrisPrediction)
 async def predict(
@@ -29,8 +31,12 @@ async def predict(
     predicted_class_name = model_processor.get_class_name(predicted_class)
 
     # Return the prediction result in JSON format
-    return IrisPrediction(predicted_class=predicted_class, predicted_class_name=predicted_class_name)
+    return IrisPrediction(
+        predicted_class=predicted_class, predicted_class_name=predicted_class_name
+    )
+
 
 if __name__ == "__main__":
     import uvicorn
+
     uvicorn.run(app, host="127.0.0.1", port=8000)
