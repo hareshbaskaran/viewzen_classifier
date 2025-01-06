@@ -29,7 +29,6 @@ if st.button("Predict"):
     # Send JSON data in the request
     response = requests.post(API_ENDPOINT_URL, json=data)
 
-
     if response.status_code == 200:
         prediction = response.json()
         st.write(f"Predicted Class: {prediction['predicted_class']}")

@@ -13,6 +13,8 @@ COPY . .
 
 # Expose the port on which the application will run
 EXPOSE 8080
-
+EXPOSE 8051
 # Run the FastAPI application using uvicorn server
-CMD ["uvicorn", "app.main:app", "--host", "127.0.0.1", "--port", "8080"]
+CMD ["fastapi", "run", "app/main.py", "--port", "80"]
+#CMD ["uvicorn", "app.main:app"]
+#CMD ["streamlt", "run", "app/app.py"]

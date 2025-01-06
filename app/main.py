@@ -17,9 +17,11 @@ app.add_middleware(
 
 model_processor = ModelProcessor()
 
+
 @app.get("/")
 def health_check():
     return {"status": "ok"}
+
 
 @app.post("/predict", response_model=IrisPrediction)
 async def predict(data: IrisInput):
@@ -32,6 +34,7 @@ async def predict(data: IrisInput):
     return IrisPrediction(
         predicted_class=predicted_class, predicted_class_name=predicted_class_name
     )
+
 
 if __name__ == "__main__":
     import uvicorn
