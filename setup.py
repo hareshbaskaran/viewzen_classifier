@@ -27,3 +27,8 @@ setup(
 
 # docker build -t IMAGE_NAME .
 # docker run -d --name CONTAINER_NAME -p 80:80 IMAGE_NAME
+
+
+### docker - inferences
+# latest digest -- sha256:427c639278a9978a61a55162d295a02f0928e76b3849cded1b18475cddb95c4c size: 1789
+# regsitry link -- https://hub.docker.com/repository/docker/hareshdev0208/viewzen-classify-image1/general
