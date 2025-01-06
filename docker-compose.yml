@@ -3,3 +3,9 @@ services:
     build: .
     ports:
       - "80:80"
+
+  streamlit:
+    build: .
+    ports:
+      - "8051:8051"
+    command: ["streamlit", "run", "app/app.py"]
