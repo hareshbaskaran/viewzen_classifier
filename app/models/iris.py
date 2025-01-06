@@ -1,16 +1,9 @@
 from pydantic import BaseModel, Field
-from fastapi import Form
-
 class IrisInput(BaseModel):
-    sepal_length: float = Form(..., description="Length of the sepal in cm")
-    sepal_width: float = Form(..., description="Width of the sepal in cm")
-    petal_length: float = Form(..., description="Length of the petal in cm")
-    petal_width: float = Form(..., description="Width of the petal in cm")
-
-    class Config:
-        orm_mode = True
-
-
+    sepal_length: float = Field(..., description="Length of the sepal")
+    sepal_width: float = Field(..., description="Width of the sepal")
+    petal_length: float = Field(..., description="Length of the petal")
+    petal_width: float = Field(..., description="Width of the Petal")
 
 
 class IrisPrediction(BaseModel):

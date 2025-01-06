@@ -14,3 +14,10 @@ viewzen_classifier/
 ├── requirements.txt
 
 
+### Docker run :
+docker-compose build
+docker-compose up
+
+### Local - Run :
+uvicorn app.main:app 
+streamlit run app/app.py

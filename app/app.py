@@ -3,7 +3,7 @@ import requests
 from utils.configs import API_ENDPOINT_URL
 
 st.title("Iris Flower Prediction")
-st.write("Please provide the following details about the Iris flower:")
+st.write("Please provide the following DEtails about iris :")
 
 sepal_length = st.number_input(
     "Sepal Length (cm)", min_value=0.0, max_value=10.0, step=0.1
