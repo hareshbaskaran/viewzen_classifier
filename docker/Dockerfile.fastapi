@@ -15,6 +15,6 @@ COPY . .
 EXPOSE 8080
 
 # Run the FastAPI application using uvicorn server
-#CMD ["fastapi", "run", "app/main.py", "--port", "8080"]
+CMD ["fastapi", "run", "app/main.py", "--port", "8080"]
 #CMD ["uvicorn", "app.main:app"]
-CMD ["sh", "-c", "fastapi run app/main.py --port 8080 & streamlit run app/app.py"]
+#CMD ["streamlt", "run", "app/app.py"]

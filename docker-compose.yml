@@ -1,11 +1,7 @@
 services:
-  fastapi:
-    build: .
-    ports:
-      - "80:80"
-
   streamlit:
-    build: .
+    build:
+      context: .
     ports:
-      - "8051:8051"
-    command: ["streamlit", "run", "app/app.py"]
+      - "8501:8501"
+

@@ -1,0 +1,13 @@
+# Use the official Python base image
+FROM python:3.9-slim
+
+
+# Install the Python dependencies
+RUN pip install streamlit
+
+# Copy the application code to the working directory
+COPY . .
+
+EXPOSE 8051
+
+CMD ["streamlt", "run", "app/app.py"]
