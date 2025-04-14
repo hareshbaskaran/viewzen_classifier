@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36" version="24.7.14" pages="2">
   <diagram name="Page-1" id="4B6mVV04YswXl9gxUe7l">
-    <mxGraphModel dx="1050" dy="572" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1850" dy="522" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -491,7 +491,7 @@
           <mxGeometry x="4010.0018554687504" y="785.0032006835937" width="304.1964416503906" height="172.23944091796875" as="geometry" />
         </mxCell>
         <mxCell id="ueWLZd4Qek1wNeyypE2d-105" value="&lt;div style=&quot;width: 502.13263px;height:auto;word-break: break-word;line-height:1em;&quot;&gt;&lt;div style=&quot;line-height: 231%;&quot; align=&quot;left&quot;&gt;&lt;span style=&quot;font-size: 27px; line-height: 0;&quot;&gt;&lt;span style=&quot;line-height: 0;&quot;&gt;&lt;span style=&quot;color: #1e1e1e; font-size: 27px; line-height: 16.5px;&quot;&gt;Requirement &amp;amp; setup : &lt;br&gt;&lt;br&gt;Volume Maps:&lt;br&gt;- Embedding Model ( read -only)&lt;br&gt;- Index Record Manager&lt;br&gt;- Vector DB (Chroma)&lt;br&gt;- File Storage (dir/type)&lt;br&gt;- Filter Table (Optional)&lt;br&gt;&lt;br&gt;Services :&lt;br&gt;- fastapi &lt;br&gt;- ocr_engine&lt;br&gt;- streamlit&lt;br&gt;&lt;br&gt;Networks :&lt;br&gt;- fastapi&lt;br&gt;- ocr_engine&lt;/span&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;nl2Br=0;html=1;nl2Br=0;verticalAlign=top;align=left;spacingLeft=0.0;spacingRight=0;spacingTop=-7.0;spacingBottom=0;whiteSpace=wrap;gliffyId=104;fontFamily=Helvetica;" vertex="1" parent="1">
-          <mxGeometry x="57.00430732727051" y="40.94132019042969" width="505.13262939453125" height="566.97802734375" as="geometry" />
+          <mxGeometry x="-717.9956926727295" y="731.0013201904296" width="505.13262939453125" height="566.97802734375" as="geometry" />
         </mxCell>
         <mxCell id="ueWLZd4Qek1wNeyypE2d-117" value="&lt;div style=&quot;width: 286.07864px;height:auto;word-break: break-word;line-height:1em;&quot;&gt;&lt;div align=&quot;left&quot;&gt;&lt;span style=&quot;line-height: 0;&quot;&gt;&lt;span style=&quot;line-height: 0;&quot;&gt;&lt;span style=&quot;color: rgb(30, 30, 30); line-height: 16.5px;&quot;&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;OCR Engine&lt;/font&gt;&lt;/span&gt;&lt;br&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;nl2Br=0;html=1;nl2Br=0;verticalAlign=top;align=left;spacingLeft=0.0;spacingRight=0;spacingTop=-7.0;spacingBottom=0;whiteSpace=wrap;gliffyId=116;fontFamily=Helvetica;" vertex="1" parent="1">
           <mxGeometry x="1380.5525634765625" y="896.3309448242187" width="289.0786437988281" height="29.30191993713379" as="geometry" />
